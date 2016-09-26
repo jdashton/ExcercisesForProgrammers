@@ -112,7 +112,6 @@ Session.vim
 # auto-generated tag files
 tags
 ### Rails template
-*.rbc
 capybara-*.html
 .rspec
 /log
@@ -120,7 +119,6 @@ capybara-*.html
 /db/*.sqlite3
 /db/*.sqlite3-journal
 /public/system
-/coverage/
 /spec/tmp
 **.orig
 rerun.txt
@@ -134,14 +132,10 @@ config/secrets.yml
 
 ## Environment normalization:
 /.bundle
-/vendor/bundle
-
 # these should all be checked in to normalize the environment:
 # Gemfile.lock, .ruby-version, .ruby-gemset
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
-.rvmrc
-
 # if using bower-rails ignore default bower_components path bower.json files
 /vendor/assets/bower_components
 *.bowerrc
@@ -152,8 +146,3 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
-
-.gitignore
-elm-package.json
-src/
-tests/
