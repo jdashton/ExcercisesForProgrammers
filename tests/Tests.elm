@@ -5,17 +5,19 @@ import Expect
 import Test.Runner.Html
 import String
 
+import Tips
+
 
 all : Test
 all =
-    describe "A Test Suite"
-        [ test "Addition" <|
-            \() ->
-                Expect.equal (3 + 7) 10
-        , test "String.left" <|
-            \() ->
-                Expect.equal "a" (String.left 1 "abcdefg")
-        , test "This test should fail" <|
-            \() ->
-                Expect.fail "failed as expected!"
+    describe "Tips Engine"
+        [ test "Ten bucks at 15%" <| \() -> Expect.equal (1.50, 11.50) (Tips.calc 10 15)
+        , test "Rounding change"  <| \() -> Expect.equal (1.69, 12.94) (Tips.calc 11.25 15)
         ]
+
+main : Program Never
+main =
+  [ all
+  ]
+    |> concat
+    |> Test.Runner.Html.run
