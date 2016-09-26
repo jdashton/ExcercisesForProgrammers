@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
     "summary": "Exercises from the book 'Exercises for Programmers'",
-    "repository": "https://github.com/jdashton/ExercisesForProgrammers.git",
+    "repository": "https://github.com/jdashton/exercises-for-programmers.git",
     "license": "BSD3",
     "source-directories": [
         "src"
